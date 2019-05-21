@@ -42,16 +42,20 @@ class App extends Component {
       }
 
 
-    handleChange =(event) =>{
-      this.setState({value: event.target.value});
-    }
+    // handleChange =(event) =>{
+    //   this.setState({value: event.target.elementsvalue});
+    // }
 
-    handleSubmit = (event) => {
-      // alert('A name was submitted: ' + this.state.value);
+    newBookFormatted = (event) => {
       event.preventDefault();
-      const newBook= [...this.state.books, event.value]
+
+      const newBook= {
+        title: event.target.elements.title.value,
+        author: event.target.elements.author.value,
+        img: event.target.elements.img.value
+      }
       this.setState({
-        books: newBook
+        books: [newBook, ...this.state.books]
       })
       // console.log(this.state.book);
     }
@@ -63,6 +67,7 @@ class App extends Component {
         <BookList
         books={this.state.books}
         addBook={this.addBook}
+        newBookFormatted={this.newBookFormatted}
         />
         <Bookshelf
         bookshelf={this.state.bookshelf}
