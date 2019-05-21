@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap');
+
 .App {
   text-align: center;
 }
@@ -39,8 +41,34 @@ img {
   display: flex;
 }
 .book-list {
-  width: 50%;
+  width: 45%;
+  margin-right: 8%;
+  margin-left: 1%;
 }
 .bookshelf {
-  width: 50%;
+  width: 45%;
+  float: right;
+  margin-right: 1%;
+}
+
+
+.all-books {
+  margin-top: 20px;
+}
+
+#add-book-form {
+  margin: 20px;
+}
+
+.title-banner {
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 5em;
+  padding: 50px;
+}
+
+h1, h2, .title-banner {
+  font-family: 'Cabin Sketch', cursive !important;
+  text-align: center;
 }

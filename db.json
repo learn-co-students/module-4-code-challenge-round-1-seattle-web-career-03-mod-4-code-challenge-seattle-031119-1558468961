@@ -53,6 +53,12 @@
       "author": "Erica Bauermeister",
       "img": "https://images-na.ssl-images-amazon.com/images/I/91wkh0SnczL.jpg",
       "id": 9
+    },
+    {
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "img": "https://images.gr-assets.com/books/1442726934l/4865.jpg",
+      "id": 10
     }
   ]
 }
