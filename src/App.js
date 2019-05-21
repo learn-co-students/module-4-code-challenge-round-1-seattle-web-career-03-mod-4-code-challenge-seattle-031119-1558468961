@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import BookList from "./containers/BookList";
 import Bookshelf from "./containers/Bookshelf";
@@ -13,7 +12,6 @@ class App extends Component {
       myBooks: []
     }
 
-    this.fetchBooks = this.fetchBooks.bind(this)
     this.addToShelf = this.addToShelf.bind(this)
     this.removeBook = this.removeBook.bind(this)
     this.createBookObject = this.createBookObject.bind(this)
@@ -46,7 +44,7 @@ class App extends Component {
   }
 
   createBookObject(ev) {
-    let createID = 10
+    let createID = Math.floor(Math.random() * 100)
     ev.preventDefault()
     let book = {
       "id": createID,
