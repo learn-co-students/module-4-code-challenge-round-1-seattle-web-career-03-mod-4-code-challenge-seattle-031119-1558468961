@@ -2,10 +2,33 @@
   text-align: center;
 }
 
+body {
+  background-color: violet;
+  text-shadow: 0px 0px 10px white;
+}
+h1 {
+  color: purple;
+}
+h4 {
+  color: white
+}
+.book-covers {
+  box-shadow: 2px 0px 10px purple;
+}
+
+.top-bar {
+  padding: 2px;
+  text-align: center;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
+}
+
+.logo-div {
+
 }
 
 .App-header {
@@ -39,8 +62,23 @@ img {
   display: flex;
 }
 .book-list {
+  text-align: center;
+  border-top: solid;
+  border-right: solid;
+  border-top-right-radius: 50px;
+  border-color: cyan;
+  /* padding-left: 10px; */
   width: 50%;
+
+
 }
 .bookshelf {
+  text-align: center;
+  border-top: solid;
+  border-left: solid;
+  border-top-left-radius: 50px;
+  border-color: cyan;
+  /* padding-left: 10px; */
   width: 50%;
+
 }
